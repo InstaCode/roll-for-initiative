@@ -13,7 +13,9 @@ struct ContentView: View {
     @State var dice1: Int = 0
     @State var dice2: Int = 0
     @State var dice3: Int = 0
-    @State var diceTotal: Int = 0
+	var diceTotal: Int {
+		return dice1+dice2+dice3
+	}
     @State var isDiceRoll = false
     var body: some View {
         VStack {
@@ -32,7 +34,7 @@ struct ContentView: View {
                 }
                 
             }
-            if (isDiceRoll)
+            if (diceTotal > 0)
             {
                 Text("The sum of your dice rolls is \(diceTotal).").padding()
             }
@@ -40,15 +42,11 @@ struct ContentView: View {
                 dice1 = diceGenerator.nextInt()
                 dice2 = diceGenerator.nextInt()
                 dice3 = diceGenerator.nextInt()
-                diceTotal = dice1 + dice2 + dice3
-                isDiceRoll = true
             }.padding(.top)
             Button("Clear"){
                 dice1 = 0
                 dice2 = 0
                 dice3 = 0
-                diceTotal = 0
-                isDiceRoll = false;
             }
             .padding(.bottom)
         }
