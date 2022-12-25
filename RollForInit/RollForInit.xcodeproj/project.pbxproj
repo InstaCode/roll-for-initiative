@@ -14,7 +14,9 @@
 		BD226D8229563FD30023E1EA /* RollForInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD226D8129563FD30023E1EA /* RollForInitTests.swift */; };
 		BD226D8C29563FD30023E1EA /* RollForInitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD226D8B29563FD30023E1EA /* RollForInitUITests.swift */; };
 		BD226D8E29563FD30023E1EA /* RollForInitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD226D8D29563FD30023E1EA /* RollForInitUITestsLaunchTests.swift */; };
-		BD65FEE929565C3A00B13D19 /* RFIDiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65FEE829565C3A00B13D19 /* RFIDiceModel.swift */; };
+		BD65FEE929565C3A00B13D19 /* RFIDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65FEE829565C3A00B13D19 /* RFIDice.swift */; };
+		BD65FEEB29565E3C00B13D19 /* RFIDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65FEEA29565E3C00B13D19 /* RFIDiceView.swift */; };
+		BD65FEED2956763700B13D19 /* RFIDiceBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65FEEC2956763700B13D19 /* RFIDiceBag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,9 @@
 		BD226D8729563FD30023E1EA /* RollForInitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollForInitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD226D8B29563FD30023E1EA /* RollForInitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollForInitUITests.swift; sourceTree = "<group>"; };
 		BD226D8D29563FD30023E1EA /* RollForInitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollForInitUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BD65FEE829565C3A00B13D19 /* RFIDiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFIDiceModel.swift; sourceTree = "<group>"; };
+		BD65FEE829565C3A00B13D19 /* RFIDice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFIDice.swift; sourceTree = "<group>"; };
+		BD65FEEA29565E3C00B13D19 /* RFIDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFIDiceView.swift; sourceTree = "<group>"; };
+		BD65FEEC2956763700B13D19 /* RFIDiceBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFIDiceBag.swift; sourceTree = "<group>"; };
 		DD6269D5B417107FDDA87200 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				BD226D7129563FD00023E1EA /* ContentView.swift */,
+				BD65FEEA29565E3C00B13D19 /* RFIDiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,7 +151,8 @@
 		BD226D9B2956400A0023E1EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BD65FEE829565C3A00B13D19 /* RFIDiceModel.swift */,
+				BD65FEE829565C3A00B13D19 /* RFIDice.swift */,
+				BD65FEEC2956763700B13D19 /* RFIDiceBag.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD226D7229563FD00023E1EA /* ContentView.swift in Sources */,
-				BD65FEE929565C3A00B13D19 /* RFIDiceModel.swift in Sources */,
+				BD65FEEB29565E3C00B13D19 /* RFIDiceView.swift in Sources */,
+				BD65FEE929565C3A00B13D19 /* RFIDice.swift in Sources */,
 				BD226D7029563FD00023E1EA /* RollForInitApp.swift in Sources */,
+				BD65FEED2956763700B13D19 /* RFIDiceBag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

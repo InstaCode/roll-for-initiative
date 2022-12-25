@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct RollForInitApp: App {
+	
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(diceBag: RFIDiceBag(bag:[
+					RFIDice(title: "Dice #1"),
+					RFIDice(title: "Dice #2"),
+					RFIDice(title: "Dice #3")
+		 ]))
         }
     }
 }

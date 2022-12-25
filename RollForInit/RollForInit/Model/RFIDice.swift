@@ -7,9 +7,16 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct RFIDiceModel{
-	var id: Int
+class RFIDice: Identifiable, ObservableObject{
+	
+	var id = UUID()
 	var title: String
-	var value: Int
+	@Published var value: Int
+	
+	init(title: String){
+		self.title = title;
+		self.value = 0;
+	}
 }
